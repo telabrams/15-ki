@@ -1,0 +1,17 @@
+<md-toolbar>
+    <span [hidden]="!this.showName">Hello {{this.showName}} !</span>
+    <span [hidden]="this.showName">Please Log in</span>
+</md-toolbar>
+<button md-button [mdMenuTriggerFor]="menu">Menu</button>
+<md-menu #menu="mdMenu">
+    <button md-menu-item routerLink="">Startscreen</button>
+    <button [disabled]="!this.showName" md-menu-item routerLink="/play">Play</button>
+    <button md-menu-item routerLink="/scoreboard">Score Board</button>
+</md-menu>
+<app-login [hidden]="this.showName" (open)="onOpen($event)"></app-login>
+<button [hidden]="!this.showName" routerLink="/play">Play</button>
+
+
+
+
+

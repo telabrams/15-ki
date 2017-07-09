@@ -1,0 +1,11 @@
+<p>
+  <span (click)="sortType('record')">Moves</span>
+  <span (click)="sortType('time')">Time</span>
+  <button md-menu-item routerLink="/play">Play</button>
+  <span *ngFor="let player of playerDB">
+    <h2>Player Name: {{player.doc.name}}</h2><br>
+    <h4>Player Moves: {{player.doc.record}}</h4><br>
+    <h4>Time: {{player.doc.time}}</h4><br>
+    <hr>
+  </span>
+</p>

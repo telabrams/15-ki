@@ -1,0 +1,59 @@
+#board {
+    display: block;
+    float: left;
+    margin-left: 200px;
+    margin-top: 23px;
+    padding: 2px;
+    border: 5px solid #F5D5A2;
+    width: 276px;
+    height: 276px;
+    position: relative;
+}
+
+#buttons {
+    display: block;
+    float: left;
+    margin: 25px 0 0 25px;
+    padding: 2px;
+}
+
+.example {
+    margin-top: 23px;
+    margin-left: 200px;
+    float: left;
+}
+
+.block {
+    display: block;
+    position: absolute;
+    width: 62px;
+    height: 57px;
+    border: 2px solid #E0B570;
+    margin: 2px;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    color: #A86E11;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.block-number-0 { left: 0px; top: 0px;}
+.block-number-1 { left: 70px; top: 0px;}
+.block-number-2 { left: 140px; top: 0px;}
+.block-number-3 { left: 210px; top: 0px;}
+
+.block-number-4 { left: 0px; top: 70px;}
+.block-number-5 { left: 70px; top: 70px;}
+.block-number-6 { left: 140px; top: 70px;}
+.block-number-7 { left: 210px; top: 70px;}
+
+.block-number-8 { left: 0px; top: 140px;}
+.block-number-9 { left: 70px; top: 140px;}
+.block-number-10 { left: 140px; top: 140px;}
+.block-number-11 { left: 210px; top: 140px;}
+
+.block-number-12 { left: 0px; top: 210px;}
+.block-number-13 { left: 70px; top: 210px;}
+.block-number-14 { left: 140px; top: 210px;}
+.block-number-15 { left: 210px; top: 210px;}

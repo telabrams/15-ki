@@ -1,0 +1,11 @@
+<button md-menu-item routerLink="/scoreboard">Scoreboard</button>
+<div id="board">
+  <span (click)="clickEvent(block)"
+        class="block" [ngClass]="block.class_id"  *ngFor="let block of blocks">{{block.number}}</span>
+</div>
+<h1 [hidden]="!winCheck">Congratulations You Win!!</h1>
+<div class="example">
+  <h3>Example of win combination</h3>
+  <img src="../../assets/example_of_win.jpg" alt="">
+</div>
+

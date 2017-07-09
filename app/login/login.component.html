@@ -1,0 +1,9 @@
+<form class="example-form" (ngSubmit)="onSubmit(); todoForm.reset()"  #todoForm="ngForm">
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><md-input-container class="example-full-width">
+      <input mdInput name="playerName" [(ngModel)]="playerName" placeholder="First name" required>
+    </md-input-container></td>
+  </tr></table>
+  <button type="submit" (click)="toggle()" [disabled]="todoForm.form.invalid">Submit</button>
+</form>
